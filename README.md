@@ -20,11 +20,19 @@ npm run fix
 npm run build
 ```
 
-### 5. Run locally
+### 5.a. Run locally
 ```bash
 npm start
 ```
 
+### 5.a. Run locally via Docker
+
+```bash
+docker build -t kojinten-front:latest .
+docker run --rm -p 8080:80 kojinten-front:latest
+```
+
+### 6. Test
 Open the below URL:
 ```
 http://localhost:8080
