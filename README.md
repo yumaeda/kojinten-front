@@ -38,3 +38,8 @@ Open the below URL:
 http://localhost:8080
 ```
 
+### 7. Login to the nginx container
+```bash
+docker exec -it <CONTAINER_ID> sh
+```
+
