@@ -43,3 +43,8 @@ http://localhost:8080
 docker exec -it <CONTAINER_ID> sh
 ```
 
+### 8. Push Docker image to the Docker Hub
+```bash
+docker login
+docker push yumaeda/kojinten-front:latest
+```
