@@ -1,13 +1,11 @@
 /**
- * Renders home page.
- *
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import PageTemplate from 'components/templates/PageTemplate'
 import * as React from 'react'
 
 /**
- * HomePage component
+ * HomePage Component
  */
 const HomePage: React.FC = () => {
     return (

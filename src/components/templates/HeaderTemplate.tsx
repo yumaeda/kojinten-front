@@ -11,7 +11,7 @@ interface Props {
 }
 
 /**
- * HeaderTemplate component
+ * HeaderTemplate Component
  */
 const HeaderTemplate: React.FC<Props> = props => (
     <header>{props.children}</header>

@@ -1,6 +1,4 @@
 /**
- * Renders root component
- *
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import Root from 'components/Root'

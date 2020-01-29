@@ -11,7 +11,7 @@ interface Props {
 }
 
 /**
- * FooterTemplate component
+ * FooterTemplate Component
  */
 const FooterTemplate: React.FC<Props> = props => (
     <footer>{props.children}</footer>

@@ -1,6 +1,4 @@
 /**
- * PageTemplate component
- *
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import * as React from 'react'
@@ -15,7 +13,7 @@ interface Props {
 }
 
 /**
- * PageTemplate component
+ * PageTemplate Component
  */
 const PageTemplate: React.FC<Props> = props => {
     const { children } = props
