@@ -3,6 +3,7 @@
  */
 import * as React from 'react'
 import HeaderTemplate from 'components/templates/HeaderTemplate'
+import { Helmet } from 'react-helmet'
 import FooterTemplate from 'components/templates/FooterTemplate'
 
 /**
@@ -10,18 +11,27 @@ import FooterTemplate from 'components/templates/FooterTemplate'
  */
 interface Props {
     children: React.ReactNode
+    subTitle: string,
+    description: string
 }
 
 /**
  * PageTemplate Component
  */
 const PageTemplate: React.FC<Props> = props => {
-    const { children } = props
+    const { children, description, subTitle } = props
+    const title = `${subTitle} - Tokyo隠れ家`
 
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{title}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="description" content={description} />
+            </Helmet>
             <HeaderTemplate>
-                <h1>Tokyo Hideaway</h1>
+                <h1>{subTitle}</h1>
             </HeaderTemplate>
             <div className="contents">{children}</div>
             <FooterTemplate>
