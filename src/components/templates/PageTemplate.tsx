@@ -5,13 +5,14 @@ import * as React from 'react'
 import HeaderTemplate from 'components/templates/HeaderTemplate'
 import { Helmet } from 'react-helmet'
 import FooterTemplate from 'components/templates/FooterTemplate'
+import Container from '@material-ui/core/Container'
 
 /**
  * Props interface for PageTemplate
  */
 interface Props {
     children: React.ReactNode
-    subTitle: string,
+    subTitle: string
     description: string
 }
 
@@ -23,32 +24,20 @@ const PageTemplate: React.FC<Props> = props => {
     const title = `${subTitle} - Tokyo隠れ家`
 
     return (
-        <div>
+        <>
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>{title}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content={description} />
+                <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
             </Helmet>
-            <HeaderTemplate>
-                <h1>{subTitle}</h1>
-            </HeaderTemplate>
-            <div className="contents">{children}</div>
-            <FooterTemplate>
-                &copy;{`${new Date().getFullYear()} Tokyo Hideaway`}
-                <br />
-                <br />
-                <div className="footer-links">
-                    <a href="https://github.com/yumaeda">
-                        GitHub
-                    </a>
-                    <br />
-                    <a href="https://www.linkedin.com/in/yukitaka-maeda-531b2924">
-                        LinkedIn
-                    </a>
-                </div>
-            </FooterTemplate>
-        </div>
+            <HeaderTemplate pageTitle={subTitle}></HeaderTemplate>
+            <Container maxWidth="sm">
+                <div className="contents">{children}</div>
+                <FooterTemplate></FooterTemplate>
+            </Container>
+        </>
     )
 }
 

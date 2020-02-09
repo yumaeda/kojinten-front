@@ -9,7 +9,8 @@ import * as React from 'react'
  */
 const HomePage: React.FC = () => {
     const title = 'ホーム'
-    const description = '東京にある隠れ家的なレストランや居酒屋を紹介します。知る人ぞ知るお店やネットでも見つかりにくいお店を中心に掲載していく予定です。'
+    const description =
+        '東京にある隠れ家的なレストランや居酒屋を紹介します。知る人ぞ知るお店やネットでも見つかりにくいお店を中心に掲載していく予定です。'
 
     return (
         <PageTemplate subTitle={title} description={description}>

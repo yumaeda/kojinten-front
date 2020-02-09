@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "allowJs": true,
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
         "outDir": "./dist/",
@@ -12,8 +13,10 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "lib": ["es6", "dom"],
-        "module": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
         "removeComments": true,
+        "rootDir": "src",
         "target": "es5",
         "jsx": "react"
     },

@@ -28,6 +28,7 @@ module.exports = {
         "react"
     ],
     rules: {
+        "react/prop-types": [0],
         "@typescript-eslint/no-unnecessary-type-assertion": 2,
         "@typescript-eslint/member-delimiter-style": [
             2,
