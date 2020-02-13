@@ -2,6 +2,7 @@
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import PageTemplate from 'components/templates/PageTemplate'
+import { S3_ENDPOINT } from 'constants/Config'
 import Image from 'material-ui-image'
 import * as React from 'react'
 
@@ -15,7 +16,7 @@ const HomePage: React.FC = () => {
 
     return (
         <PageTemplate subTitle={title} description={description}>
-            <Image src="https://kojinten.s3-ap-northeast-1.amazonaws.com/images/cover.jpg" />
+            <Image src={`${S3_ENDPOINT}/images/cover.jpg`} />
             <p>
                 Welcome to the Tokyo Hideaway.
                 <br />
