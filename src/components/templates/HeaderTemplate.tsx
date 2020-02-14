@@ -2,12 +2,9 @@
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import * as React from 'react'
-import { Link } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import MenuList from '@material-ui/core/MenuList'
-import MenuItem from '@material-ui/core/MenuItem'
 import InputBase from '@material-ui/core/InputBase'
 import { fade, makeStyles } from '@material-ui/core/styles'
 import SearchIcon from '@material-ui/icons/Search'
@@ -82,14 +79,6 @@ const HeaderTemplate: React.FC<Props> = props => {
         <header className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <MenuList>
-                        <Link to="/">
-                            <MenuItem>Home</MenuItem>
-                        </Link>
-                        <Link to="/ikebukuro">
-                            <MenuItem>Ikebukuro</MenuItem>
-                        </Link>
-                    </MenuList>
                     <Typography className={classes.title} variant="h6" noWrap>
                         {pageTitle}
                     </Typography>

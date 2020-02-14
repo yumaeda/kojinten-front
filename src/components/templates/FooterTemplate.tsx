@@ -2,24 +2,16 @@
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import * as React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import Divider from '@material-ui/core/Divider'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
-const useStyles = makeStyles({
-    root: {
-        width: 500
-    }
-})
-
 /**
  * FooterTemplate Component
  */
 const FooterTemplate: React.FC = () => {
-    const classes = useStyles()
     const [value, setValue] = React.useState('')
 
     return (
@@ -42,7 +34,6 @@ const FooterTemplate: React.FC = () => {
                     setValue(newValue)
                 }}
                 showLabels
-                className={classes.root}
             >
                 <BottomNavigationAction label="GitHub" value="github" icon={<GitHubIcon />}>
                     GitHub
