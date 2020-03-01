@@ -2,7 +2,7 @@
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
 import PageTemplate from 'components/templates/PageTemplate'
-import { S3_ENDPOINT } from 'constants/Config'
+import { CDN_BASE } from 'constants/Config'
 import Image from 'material-ui-image'
 import * as React from 'react'
 
@@ -16,7 +16,7 @@ const AreaPage: React.FC = () => {
 
     return (
         <PageTemplate subTitle={title} description={description}>
-            <Image src={`${S3_ENDPOINT}/images/ikebukuro/cover.jpg`} />
+            <Image src={`${CDN_BASE}/images/ikebukuro/cover.jpg`} />
             <p>{description}</p>
         </PageTemplate>
     )
