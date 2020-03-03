@@ -1,6 +1,7 @@
 /**
  * @author Yukitaka Maeda [yumaeda@gmail.com]
  */
+import { Link } from 'react-router-dom'
 import PageTemplate from 'components/templates/PageTemplate'
 import { CDN_BASE } from 'constants/Config'
 import Image from 'material-ui-image'
@@ -18,6 +19,7 @@ const AreaPage: React.FC = () => {
         <PageTemplate subTitle={title} description={description}>
             <Image src={`${CDN_BASE}/images/ikebukuro/cover.jpg`} />
             <p>{description}</p>
+            <Link to="/ikebukuro/shops">Shops</Link>
         </PageTemplate>
     )
 }
