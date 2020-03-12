@@ -1,5 +1,5 @@
-# kojinten-front
-Repository for Kojinten Frontend
+# tokyo-hideaway-front
+Repository for Tokyo Hideaway Frontend
 
 ## How to Use
 ### 1. Setup Mac
