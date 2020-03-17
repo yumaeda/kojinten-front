@@ -9,7 +9,7 @@ import MenuList from '@material-ui/core/MenuList'
 /**
  * NavigationTemplate Component
  */
-const NavigationTemplate: React.FC = () => {
+const NavigationTemplate: React.FC<{}> = () => {
     return (
         <aside>
             <MenuList>

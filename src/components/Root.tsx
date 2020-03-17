@@ -13,7 +13,7 @@ const Root: React.FC<{}> = () => {
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/ikebukuro" component={AreaPage} />
-                <Route path="/:area/shops" component={ShopListPage} />
+                <Route path="/shops" component={ShopListPage} />
             </Switch>
         </Router>
     )

@@ -11,7 +11,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 /**
  * FooterTemplate Component
  */
-const FooterTemplate: React.FC = () => {
+const FooterTemplate: React.FC<{}> = () => {
     const [value, setValue] = React.useState('')
 
     return (

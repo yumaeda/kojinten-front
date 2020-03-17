@@ -20,6 +20,9 @@ module.exports = {
       },
       extensions: [ '.ts', '.tsx', '.js', '.json' ]
   },
+  devServer: {
+      historyApiFallback: true
+  },
   output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist')
